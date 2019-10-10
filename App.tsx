@@ -1,3 +1,4 @@
+import { GOOGLE_PLACES_API_KEY } from 'react-native-dotenv';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
@@ -5,6 +6,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>Open up App.tsx to start working on your app!</Text>
+      <Text>{GOOGLE_PLACES_API_KEY}</Text>
     </View>
   );
 }
