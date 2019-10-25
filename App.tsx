@@ -4,10 +4,12 @@ import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 import HomeScreen from './src/HomeScreen';
 import ProfileScreen from './src/ProfileScreen';
+import MapScreen from './src/MapScreen';
 
 const AppNavigator = createStackNavigator({
   Home: { screen: HomeScreen },
   Profile: { screen: ProfileScreen },
+  Map: { screen: MapScreen },
 });
 
 const App = createAppContainer(AppNavigator);

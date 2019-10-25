@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, Button } from 'react-native';
+import { View, Text, Button, TextInput } from 'react-native';
 import { getRandomJoke } from '../utils/JokesClient';
 
 import { style } from './HomeScreenStyle';
@@ -43,6 +43,16 @@ export default class HomeScreen extends React.Component<Props> {
         <Button
           title="Go to Jane's profile"
           onPress={() => navigate('Profile', {name: 'Jane'})}
+        />
+        <TextInput
+          placeholder="Current Address"
+        />
+        <TextInput
+          placeholder="Airport Pick Up.... or Flight Number"
+        />
+        <Button
+          title="Check out the map"
+          onPress={() => navigate('Map')}
         />
       </View>
     );
